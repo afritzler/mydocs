@@ -1,3 +1,13 @@
 site_name: My Docs
+repo_url: https://github.com/afritzler/mydocs/
 theme:
   name: material
+  palette:
+    primary: teal
+  font:
+    text: 'Work Sans'
+markdown_extensions:
+- codehilite
+- admonition
+- toc:
+    permalink: true
