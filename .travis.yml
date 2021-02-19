@@ -22,4 +22,4 @@ deploy:
   - provider: script
     script: bash $TRAVIS_BUILD_DIR/.travis/deploy.sh
     on:
-      branch: master
+      branch: main
