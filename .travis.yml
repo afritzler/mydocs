@@ -9,9 +9,6 @@ before_install:
 install:
   - pip install -r docs/requirements.txt
 
-before_script:
-  - git clean -f -d -x
-
 script:
   - mkdocs build
 
