@@ -19,7 +19,7 @@ deploy:
   provider: pages
   local_dir: site
   keep_history: true
-  skip_cleanup: true
+  cleanup: true
   token: $GH_TOKEN
   on:
     branch: main
