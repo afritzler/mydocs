@@ -13,7 +13,7 @@ script:
   - mkdocs build
 
 deploy:
-  provider: pages:git
+  provider: pages
   local_dir: site
   keep_history: true
   cleanup: false
