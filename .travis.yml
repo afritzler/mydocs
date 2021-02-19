@@ -13,11 +13,11 @@ script:
   - mkdocs build
 
 deploy:
-  strategy: git
-  provider: pages
+  provider: pages:git
   local_dir: site
   keep_history: true
   cleanup: true
   token: $GH_TOKEN
+  edge: true
   on:
     branch: main
