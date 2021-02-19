@@ -8,19 +8,16 @@ before_install:
 install:
   - pip install -r docs/requirements.txt
 
-
 before_script:
   - git clean -f -d -x
 
 script:
   - mkdocs build
 
-
 deploy:
   provider: pages
-  local-dir: site
-  skip-cleanup: true
-  keep-history: true
-  github-token: $GH_TOKEN
+  local_dir: site
+  keep_history: true
+  github_token: $GH_TOKEN
   on:
     branch: main
